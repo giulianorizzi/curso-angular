@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+/**BOOTSTRAP**/
+@import '~bootstrap/dist/css/bootstrap.css';
+
+.agenda {
+    margin: 0 auto;
+    width: 20rem;
+    background-color: #333333;
+    padding: 20px
+}
+
+.agenda input {
+    margin: 10px 0;
+}
+
+.card {
+    margin-top: 10px;
+}
+
+.error {
+    margin-top: 20px;
+}
