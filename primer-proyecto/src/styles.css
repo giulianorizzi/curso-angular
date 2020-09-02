@@ -3,6 +3,15 @@
 /**BOOTSTRAP**/
 @import '~bootstrap/dist/css/bootstrap.css';
 
+body {
+    background: rgb(147,190,215);
+    background: linear-gradient(90deg, rgba(147,190,215,1) 0%, rgba(182,185,189,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
 .agenda {
     margin: 0 auto;
     width: 20rem;
@@ -20,4 +29,15 @@
 
 .error {
     margin-top: 20px;
+}
+
+footer {
+    padding: 20px;
+    background-color:#333333;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
 }

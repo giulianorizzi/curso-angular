@@ -17,9 +17,9 @@ export class AgendaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  agregarContacto (nom:string, tel) {
-    if(nom !== '' && tel !==''){
-      let contacto = new Contacto(nom, tel);
+  agregarContacto (nom:string, tel, dir:string) {
+    if(nom !== '' && tel !=='' && dir !== ''){
+      let contacto = new Contacto(nom, tel, dir);
       this.contactos.push(contacto);
       this.mostrarMensaje('ok','Contacto agregado!');
     } else {
@@ -42,10 +42,6 @@ export class AgendaComponent implements OnInit {
     error.classList.remove('d-none');
     error.setAttribute('role', 'alert');
     error.textContent = texto;
-
-    setTimeout(() => {
-      error.classList.add('d-none');
-    }, 4000);
   }
 
   

@@ -4,7 +4,8 @@
     <form action="" class="agenda">
         <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingresa tu nombre" #nom>
         <input type="number" class="form-control" name="telefono" id="telefono" placeholder="Ingresa tu telefono" #tel> 
-        <button type="button" name="enviar" id="btn_enviar" class="btn btn-primary btn-block" (click)="agregarContacto(nom.value, tel.value)">Enviar</button>
+        <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Ingresa tu direccion" #dir>
+        <button type="button" name="enviar" id="btn_enviar" class="btn btn-primary btn-block" (click)="agregarContacto(nom.value, tel.value, dir.value)">Enviar</button>
     </form>
     <div class="error"></div>
     <div class="row">
